@@ -1,0 +1,35 @@
+@import '../app'
+
+.container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 2px
+    position: relative
+    width: calc(100% - 4px)
+    height: 32px
+    padding: 2px
+    margin-bottom: 48px
+    background: #fff
+    border-radius: 18px
+
+.item
+    +transDur(0.4s)
+    position: relative
+    p
+        margin: 0
+        line-height: 32px
+        font-weight: 600
+        font-size: 12px
+        text-align: center
+        text-transform: uppercase
+    &:first-child
+        border-top-left-radius: 18px
+        border-bottom-left-radius: 18px
+    &:last-child
+        border-top-right-radius: 18px
+        border-bottom-tight-radius: 18px
+
+.active_item
+    background: #0E6B88
+    p   
+        color: #fff

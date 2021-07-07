@@ -1,0 +1,27 @@
+@import '../app'
+
+.container
+    position: relative
+    width: inherit
+    margin: 0 0 32px 0
+
+.input
+    position: relative
+    top: 24px
+    width: calc( 100% - 24px)    
+    padding: 8px 12px
+    border-radius: 6px
+    font-size: 14px
+    outline: none
+    border: none
+    &:focus
+        ~label
+            top: 0px
+            font-size: 12px
+
+.label
+    +transDur(.2s)
+    position: absolute
+    top: 30px
+    left: 12px
+    font-size: 14px
